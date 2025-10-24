@@ -1,1 +1,211 @@
-comments with no changes
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranav's Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #222;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #331919;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #bbb;
+      font-size: 1em;
+    }
+
+    section {
+      background-color: #fff;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    section h2 {
+      color: #000000;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-bottom: 5px;
+      font-size: 1.4em;
+    }
+
+    .about-img {
+      display: block;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px auto;
+      border: 3px solid #000;
+    }
+
+    section p {
+      text-align: justify;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 8px 0;
+      transition: background 0.3s;
+    }
+
+    ul li:hover {
+      background: #ddd;
+    }
+
+    .project, .achievement {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .project:hover, .achievement:hover {
+      background-color: #e6e6e6;
+    }
+
+    .project h3, .achievement h3 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 10px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      section h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm <span style="color:#ffffff;">Pranav Kapsimey</span></h1>
+    <p>Welcome to My Portfolio!</p>
+  </header>
+
+  <section id="about">
+    <img src="https://github.com/pranavkapsimey/My-portfolio/blob/main/photop.jpg" alt="Profile Picture" class="about-img">
+    <h2>About Me</h2>
+    <p>Hello, I'm Pranav Kapsimey, a First-Year B.Tech student pursuing Electronics and Communication Engineering (ECE) at the Indian Institute of Information Technology, Sri City (IIIT Sricity). I’m currently focusing on academics along with learning different softwares such as BLENDER , Da Vinci Resolve. Programming languages I am currently learning are   C, Java, HTML and exploring  intersection of hardware design and emerging technologies like IoT.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Java</li>
+        <li>C</li>
+        <li>Video Editing</li>
+        <li>3-D Modeling(<a href="https://www.blender.org/">BLENDER</a>)</li>
+        <li>IOT (using <a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html">STM32</a>)</li>
+    </ul>
+</section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Reading Blogs</li>
+      <li>Gaming</li>
+      <li>Collecting coins</li>
+      <li>Doodling</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement">
+      <h3>JEE ADVANCE qualified</h3>
+      <p>I cleared JEE advance with 25k AIR.
+        Successfully passed mains with AIR 44k.
+      </p>
+    </div>
+    <div class="achievement">
+      <h3>Physics Olympiad cleared</h3>
+      <p>Qualified the level 1 of physics olympiad and participated in level 2.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Hotel Room Booking Terminal view System</h3>
+      <p>With help of Java I created a simple hotel room occupency programm in which rooms filled and date till booked was shown and remaining rooms were displayed. </p>
+    </div>
+    <div class="project">
+      <h3>Created Simple Furniture in 3-D</h3>
+      <p>Using the most beginner level tools in blender I rendered chair,Table,stool,etc</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="messagepranav@hotmail.com">messagepranav@hotmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/pranavkapsimey" target="_blank">https://github.com/pranavkapsimey</a></p>
+  </section>
+
+  <footer>
+    <p>Git & GitHub Bootcamp • GDG x IOTA </p>
+  </footer>
+</body>
+</html>
