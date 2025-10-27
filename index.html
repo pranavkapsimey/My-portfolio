@@ -46,15 +46,17 @@
       margin: 0;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap; /* Allows buttons to stack on small screens */
+      flex-wrap: wrap; 
     }
 
     nav li {
-      margin: 5px 10px; /* Space between buttons */
+      margin: 5px 10px; 
     }
 
+    /* --- UPDATED BUTTON STYLES START --- */
     nav a {
-      color: white;
+      color: #331919; /* Dark text */
+      background-color: white; /* Solid white background */
       text-decoration: none;
       font-weight: bold;
       font-size: 0.9em;
@@ -65,10 +67,12 @@
     }
 
     nav a:hover {
-      background-color: white;
-      color: #331919; /* Dark header color */
+      background-color: #ddd; /* Light grey on hover */
+      color: #000; /* Black text */
       text-decoration: none;
+      border-color: #ddd; /* Match border to hover bg */
     }
+    /* --- UPDATED BUTTON STYLES END --- */
 
     section {
       background-color: #fff;
@@ -104,20 +108,39 @@
       margin: 10px 0;
     }
     
-    .cv-button {
-      display: inline-block;
-      background-color: #000; /* Black button */
-      color: #fff; /* White text */
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      margin-top: 20px; /* Space from the paragraph above */
-      transition: all 0.3s ease;
+    .cv-button-group {
+      display: flex; 
+      margin-top: 20px;
     }
 
-    .cv-button:hover {
-      background-color: #444; /* Dark grey on hover */
+    .cv-button-left,
+    .cv-button-right {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      line-height: 1.6;
+    }
+    
+    .cv-button-left {
+      border-radius: 8px 0 0 8px; 
+      text-align: right;
+      padding-right: 10px; 
+    }
+    
+    .cv-button-right {
+      border-radius: 0 8px 8px 0; 
+      border-left: 1px solid #333; 
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .cv-button-left:hover,
+    .cv-button-right:hover {
+      background-color: #444;
       text-decoration: none;
       color: #fff;
     }
@@ -219,10 +242,16 @@
     <h2>About Me</h2>
     <p>Hello, I'm Pranav Kapsimey, a First-Year B.Tech student pursuing Electronics and Communication Engineering (ECE) at the Indian Institute of Information Technology, Sri City (IIIT Sricity). I’m currently focusing on academics along with learning different softwares such as BLENDER , Da Vinci Resolve. Programming languages I am currently learning are   C, Java, HTML and exploring  intersection of hardware design and emerging technologies like IoT.</p>
   
-    <a href="https://pranavkapsimey.github.io/My-portfolio/pranavresume.jpg" target="_blank" class="cv-button">
-      View My CV
-    </a>
-    </section>
+    <div class="cv-button-group">
+      <a href="https://pranavkapsimey.github.io/My-portfolio/PranavResume.pdf" target="_blank" class="cv-button-left">
+        View
+      </a>
+      <a href="https://pranavkapsimey.github.io/My-portfolio/pranavresume.jpg" target="_blank" class="cv-button-right">
+        CV
+      </a>
+    </div>
+
+  </section>
 
   <section id="skills">
     <h2>Skills</h2>
@@ -231,7 +260,7 @@
         <li>C</li>
         <li>Video Editing</li>
         <li>3-D Modeling(<a href="https://www.blender.org/">BLENDER</a>)</li>
-        <li>IOT (using <a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html">STM32</a>)</li>
+        <li>IOT (using <a href="httpsD://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html">STM32</a>)</li>
     </ul>
 </section>
 
