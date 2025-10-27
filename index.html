@@ -36,7 +36,6 @@
       font-size: 1em;
     }
 
-    /* --- NEW NAVIGATION STYLES START --- */
     nav {
       margin-top: 25px;
     }
@@ -55,7 +54,7 @@
     }
 
     nav a {
-      color: rgb(157, 35, 35);
+      color: white;
       text-decoration: none;
       font-weight: bold;
       font-size: 0.9em;
@@ -66,14 +65,13 @@
     }
 
     nav a:hover {
-      background-color: rgb(255, 255, 255);
+      background-color: white;
       color: #331919; /* Dark header color */
       text-decoration: none;
     }
-    /* --- NEW NAVIGATION STYLES END --- */
 
     section {
-      background-color: #d6c6c6;
+      background-color: #fff;
       max-width: 800px;
       margin: 30px auto;
       padding: 40px 20px;
@@ -104,6 +102,24 @@
     section p {
       text-align: justify;
       margin: 10px 0;
+    }
+    
+    .cv-button {
+      display: inline-block;
+      background-color: #000; /* Black button */
+      color: #fff; /* White text */
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 20px; /* Space from the paragraph above */
+      transition: all 0.3s ease;
+    }
+
+    .cv-button:hover {
+      background-color: #444; /* Dark grey on hover */
+      text-decoration: none;
+      color: #fff;
     }
 
     ul {
@@ -164,12 +180,10 @@
         font-size: 1.8em;
       }
 
-      /* --- NEW RESPONSIVE RULE FOR NAV BUTTONS --- */
       nav a {
         padding: 6px 12px;
         font-size: 0.85em;
       }
-      /* --- END NEW RULE --- */
 
       section {
         padding: 25px 15px;
@@ -197,13 +211,18 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    </header>
+
+  </header>
 
   <section id="about">
     <img src="https://github.com/pranavkapsimey/My-portfolio/blob/main/photop.jpg" alt="Profile Picture" class="about-img">
     <h2>About Me</h2>
     <p>Hello, I'm Pranav Kapsimey, a First-Year B.Tech student pursuing Electronics and Communication Engineering (ECE) at the Indian Institute of Information Technology, Sri City (IIIT Sricity). I’m currently focusing on academics along with learning different softwares such as BLENDER , Da Vinci Resolve. Programming languages I am currently learning are   C, Java, HTML and exploring  intersection of hardware design and emerging technologies like IoT.</p>
-  </section>
+  
+    <a href="https://pranavkapsimey.github.io/My-portfolio/pranavresume.png" target="_blank" class="cv-button">
+      View My CV
+    </a>
+    </section>
 
   <section id="skills">
     <h2>Skills</h2>
